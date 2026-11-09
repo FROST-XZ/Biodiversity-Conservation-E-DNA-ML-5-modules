@@ -1,0 +1,11 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+# Strongly recommended: enables the autograd SIREN PINN and the torch JSDM / regressor paths
+torch>=2.1
+# Optional
+rasterio        # real GeoTIFF covariates (deep_jsdm.py)
+pysam           # BAM/FASTQ streaming (bioinformatics_qc.py)
+psutil          # RAM telemetry on Windows (otherwise reported as unavailable)
+onnxruntime     # only to test the exported .onnx
